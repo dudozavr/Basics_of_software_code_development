@@ -25,13 +25,13 @@ public class Solution {
         String textMassage = "Введите значение переменной ";
 
         System.out.print(textMassage + "a: ");
-        a = getVar(reader);
+        a = getNumber(reader);
 
         System.out.print(textMassage + "b: ");
-        b = getVar(reader);
+        b = getNumber(reader);
 
         System.out.print(textMassage + "c: ");
-        c = getVar(reader);
+        c = getNumber(reader);
 
         // 4. Закрытие буферизированного потока чтения.
         reader.close();
@@ -46,7 +46,7 @@ public class Solution {
     }
 
     // метод получает с консоли значение, преобразует его в число и возвращет.
-    public static int getVar(BufferedReader reader) throws IOException {
+    public static int getNumber(BufferedReader reader) throws IOException {
 
         return Integer.parseInt(reader.readLine());
 
